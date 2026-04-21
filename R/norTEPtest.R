@@ -108,7 +108,7 @@ C_matrix_MC_par <- function(l, N_per_core = 1e8, block_size = 1e5,
 #' @export
 TEPest=function(X,type='skew',l=10){
 	Y=scale(X)
-	herm <- eval_hvec_stable(Y,l+3)[4:(l+4)]
+	herm <- rowSums(eval_hvec_stable(Y,l+3)[4:(l+4),])/sqrt(length(X))
 	if(l<=10)Cmat=Cdat[1:(l+1),1:(l+1)] else Cmat<-C_matrix_MC_par(l)
 	if(type=='kurt')Cmat=Cmat[c(1,3,2,4:(l+1)),c(1,3,2,4:(l+1))]
 	Q=t(herm)%*%Cmat%*%herm	
