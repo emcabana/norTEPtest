@@ -18,7 +18,7 @@ The methodology behind these tests is based on a general family of consistent an
 Based on quadratic functionals (integrals) of the process:
 *   `TEPnorm(X,type,...)`
 ** 'type=skew': Focused on skewness.
-*   `type=kurt`: Focused on kurtosis.
+**   `type=kurt`: Focused on kurtosis.
 
 ## References
 
