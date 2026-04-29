@@ -1,6 +1,6 @@
 Package: norTEPtest
 Title: Performs the normality tests based on TEPs
-Version: 0.1.0
+Version: 0.2.0
 Author: Alejandra Cabana [aut, cre], Enrique M. Cabana [aut]
 Maintainer: Alejandra Cabana <AnaAlejandra.Cabana@uab.cat>
 Description: Implements the tests of normality focused on alternatives of skewness and kurtosis
